@@ -1,0 +1,135 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.score {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+.score p {
+    display: inline-block;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.framebox {
+    float: left;
+    margin-bottom: 50px;
+}
+
+.frame {
+    background-color: #FFFBF6;
+    height: 120px;
+    width: 170px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-left: 3px;
+}
+
+.framename {
+    text-align: center;
+    background-color: #FFF5EA;
+    border-bottom: 1px lightgray solid;
+    font-family: "Arial Black", Gadget, sans-serif
+}
+
+.ballwrapper {
+    overflow: auto;
+    position: relative;
+    height: 40px;
+    text-align: center;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    font-size: 1em;
+}
+
+.ballbox {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding-top: 6px;
+    margin: 0;
+    float: left;
+}
+
+.strikebox {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding-top: 6px;
+    border-left: solid 1px Black;
+    border-bottom: solid thin Black;
+    float: right;
+}
+
+.laststrikebox {
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    padding-top: 3px;
+    border-left: solid thin Black;
+    border-bottom: solid thin Black;
+    float: right;
+}
+
+.extrabox {
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    padding-top: 3px;
+    border-left: solid thin Black;
+    border-bottom: solid thin Black;
+    margin: 0;
+    float: left;
+}
+
+
+.framescore {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 0.9em;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.submit {
+    position: relative;
+    float: left;
+}
+
+.submit input[type=text] {
+    height: 30px;
+}
+
+.submit input[type=submit] {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    line-height: 1.8;
+    box-shadow: none;
+    color: #fff;
+    background-color: #6496c8;
+    text-shadow: -1px 1px #417cb8;
+    border: none;
+}
+
+.submit input[type=submit]:hover {
+    background-color: #4280bd;
+}
+
+.submit input[type=submit]:active {
+    -webkit-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.31);
+    -moz-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.31);
+    box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.31);
+    background-color: #4280bd;
+    
+}

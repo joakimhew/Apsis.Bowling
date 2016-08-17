@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{EEA78913-F1D6-4895-BA94-E1F810CBB6E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{CCAC808C-3E94-4A25-8A35-EFD42F5112A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Core", "3. Core", "{69FE02B2-CA76-4F2B-BC20-FDDA784FCE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsis.Bowling.Web", "src\Apsis.Bowling.Web\Apsis.Bowling.Web.csproj", "{3D0C9038-8408-4C17-915D-47944A3CA7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsis.Bowling.Service", "src\Apsis.Bowling.Service\Apsis.Bowling.Service.csproj", "{AA59E7F6-FB42-415D-9E8E-0505E5EDE470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsis.Bowling.DependencyManager", "src\Apsis.Bowling.DependencyManager\Apsis.Bowling.DependencyManager.csproj", "{FA817D81-25D9-4359-ABCB-FE004BCC5B44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BEE23702-F8A4-4CDA-8854-22E14C42F48A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3BC1E0FE-D27D-4AFA-B337-4D24039E6BC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apsis.Bowling.ServiceTests", "tests\Apsis.Bowling.ServiceTests\Apsis.Bowling.ServiceTests.csproj", "{9824E4E7-AE8E-4645-AB68-A91F10F3037F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0C9038-8408-4C17-915D-47944A3CA7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0C9038-8408-4C17-915D-47944A3CA7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0C9038-8408-4C17-915D-47944A3CA7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0C9038-8408-4C17-915D-47944A3CA7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA59E7F6-FB42-415D-9E8E-0505E5EDE470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA59E7F6-FB42-415D-9E8E-0505E5EDE470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA59E7F6-FB42-415D-9E8E-0505E5EDE470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA59E7F6-FB42-415D-9E8E-0505E5EDE470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA817D81-25D9-4359-ABCB-FE004BCC5B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA817D81-25D9-4359-ABCB-FE004BCC5B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA817D81-25D9-4359-ABCB-FE004BCC5B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA817D81-25D9-4359-ABCB-FE004BCC5B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9824E4E7-AE8E-4645-AB68-A91F10F3037F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9824E4E7-AE8E-4645-AB68-A91F10F3037F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9824E4E7-AE8E-4645-AB68-A91F10F3037F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9824E4E7-AE8E-4645-AB68-A91F10F3037F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEA78913-F1D6-4895-BA94-E1F810CBB6E6} = {BEE23702-F8A4-4CDA-8854-22E14C42F48A}
+		{CCAC808C-3E94-4A25-8A35-EFD42F5112A9} = {BEE23702-F8A4-4CDA-8854-22E14C42F48A}
+		{69FE02B2-CA76-4F2B-BC20-FDDA784FCE2D} = {BEE23702-F8A4-4CDA-8854-22E14C42F48A}
+		{3D0C9038-8408-4C17-915D-47944A3CA7D3} = {EEA78913-F1D6-4895-BA94-E1F810CBB6E6}
+		{AA59E7F6-FB42-415D-9E8E-0505E5EDE470} = {CCAC808C-3E94-4A25-8A35-EFD42F5112A9}
+		{FA817D81-25D9-4359-ABCB-FE004BCC5B44} = {69FE02B2-CA76-4F2B-BC20-FDDA784FCE2D}
+		{9824E4E7-AE8E-4645-AB68-A91F10F3037F} = {3BC1E0FE-D27D-4AFA-B337-4D24039E6BC0}
+	EndGlobalSection
+EndGlobal

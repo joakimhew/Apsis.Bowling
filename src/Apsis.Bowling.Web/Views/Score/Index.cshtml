@@ -1,0 +1,80 @@
+﻿
+@model dynamic
+
+@{
+    Layout = "../_Layout.cshtml";
+}
+
+<div ng-app="app" ng-controller="ScoreController as vm">
+
+    <div class="score">
+        <i class="fa fa-trophy fa-3x" aria-hidden="true"></i>
+        <p>{{vm.game.score}}</p>
+    </div>
+
+    <div class="framebox">
+
+        <div class="frame" ng-repeat="frame in vm.game.frames track by $index">
+            <div class="framename">{{$index+1}}</div>
+            <div class="ballwrapper">
+
+                <div class="ballbox">
+                    {{vm.isFrameStrike($index) ? "X" : frame.first}}
+                </div>
+
+                <div class="extrabox" ng-if="$index == 9">
+                    {{frame.second == 10 ? "X" : frame.second}}
+                </div>
+
+                <div class="strikebox" ng-if="$index != 9">
+                    {{vm.isFrameSpare($index) ? "/" : frame.second}}
+                </div>
+
+                <div class="laststrikebox" ng-show="{{frame.isLast}}">
+                    {{frame.third == 10 ? "X" : frame.third}}
+                </div>
+            </div>
+
+            <div class="framescore">{{frame.framescore == 0 ? "" : frame.framescore}}</div>
+        </div>
+
+
+    </div>
+
+
+    <form class="submit" ng-submit="vm.updateFrames()">
+
+
+        <input placeholder="First ball"
+               type="text"
+               ng-model="vm.game.frames[vm.currentFrame].first"
+               name="firstBall" />
+
+        <input placeholder="Second ball"
+               type="text"
+               ng-model="vm.game.frames[vm.currentFrame].second"
+               ng-hide="vm.isFrameStrike(vm.currentFrame) && vm.currentFrame != 9"
+               name="secondBall" />
+
+        <input placeholder="Third ball"
+               type="text"
+               ng-model="vm.game.frames[vm.currentFrame].third"
+               ng-show="vm.isLastFrame"
+               name="thirdBall" />
+
+        <input class="submit-button" type="submit" value="Roll" />
+
+    </form>
+</div>
+
+@section scripts
+    {
+    <script src="~/scripts/app/score/score.controller.js" language="javascript"></script>
+    <script src="https://use.fontawesome.com/2ca9e7ec35.js"></script>
+
+}
+
+@section styles
+{
+    <link rel="stylesheet" href="~/content/scorecard.css" />
+}
